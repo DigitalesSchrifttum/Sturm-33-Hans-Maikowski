@@ -1,0 +1,71 @@
+$pagewidth: 148mm
+$pageheight: 210mm
+$font: "Times New Roman", Times, serif
+$font-size: 4.38mm
+$pagemargin: 10mm
+$pagemargin-ext: $pagemargin * 1.25
+
+body
+	width: $pagewidth
+	height: $pageheight
+	border-style: solid
+
+	margin: 0
+
+	display: flex
+	flex-direction: column
+
+	font-family: $font
+	font-size: $font-size
+
+div.textarea
+	margin: auto $pagemargin $pagemargin $pagemargin
+	&.odd
+		margin-left: $pagemargin-ext
+	&.even
+		margin-right: $pagemargin-ext
+
+h3
+	text-align: center
+	margin: 2mm 0 2mm 0
+	font-size: 1.17em
+	font-weight: bold
+
+h4
+	text-align: center
+	margin: 0
+	font-size: 1.17em
+	font-weight: normal
+
+h5
+	text-align: center
+	font-weight: bold
+	margin: 2mm 0 0 0
+	font-size: 1em
+
+.end
+	text-align: end
+
+.center
+	text-align: center
+
+p
+	text-align: justify
+	hyphens: auto
+	text-indent: 1em
+	font-size: 1em
+	margin: 0
+	padding: 0
+	&.justify-last
+		text-align-last: justify
+
+.page-number
+	margin-top: 1.5mm
+	font-size: 1.2em
+	&.odd
+		text-align: end
+	&.even
+		text-align: start
+
+span.spacing
+	letter-spacing: 1mm
