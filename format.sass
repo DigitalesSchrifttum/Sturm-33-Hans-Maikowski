@@ -6,6 +6,8 @@ $pagemargin: 12mm
 $pagemargin-ext: $pagemargin * 1.34
 
 body
+	position: relative
+
 	width: $pagewidth
 	height: $pageheight
 	border-style: solid
@@ -69,3 +71,15 @@ p
 
 span.spacing
 	letter-spacing: 1mm
+
+div.page-link-area
+	display: flex
+	justify-content: space-between
+	width: 100%
+
+	position: absolute
+	bottom: 0
+
+	font-size: 3em
+	> a
+		cursor: pointer
