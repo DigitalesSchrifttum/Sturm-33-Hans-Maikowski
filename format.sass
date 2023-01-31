@@ -2,6 +2,7 @@ $pagewidth: 148mm
 $pageheight: 210mm
 $font: "Times New Roman", Times, serif
 $font-size: 4.00mm
+$line-height: 4.5mm
 $pagemargin: 12mm
 $pagemargin-ext: $pagemargin * 1.34
 
@@ -20,8 +21,13 @@ body
 	font-family: $font
 	font-size: $font-size
 
+	&.landscape
+		width: $pageheight
+		height: $pagewidth
+
 div.textarea
 	margin: auto $pagemargin $pagemargin $pagemargin
+	line-height: $line-height
 	&.odd
 		margin-left: $pagemargin-ext
 	&.even
@@ -60,6 +66,8 @@ p
 	padding: 0
 	&.justify-last
 		text-align-last: justify
+	&.no-indent-first
+		text-indent: 0
 
 .page-number
 	margin-top: 1.5mm
@@ -83,3 +91,8 @@ div.page-link-area
 	font-size: 3em
 	> a
 		cursor: pointer
+
+div.picture-placeholder
+	position: relative
+	width: 50%
+	background-color: lightgray
