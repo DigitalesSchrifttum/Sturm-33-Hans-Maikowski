@@ -5,9 +5,49 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="format.css" />
 		<title>Titel</title>
+		<style>
+			table {
+				width: 100%;
+				text-align: left;
+			}
+			th:last-child {
+				text-align-last: justify;
+			}
+			.textarea {
+				text-align: center;
+			}
+			.verlag {
+				display: inline-flex;
+				flex-direction: column;
+			}
+			.copyright {
+				text-decoration: overline;
+				text-align-last: justify;
+			}
+		</style>
 	</head>
 	<body>
-		<div class="textarea even"></div>
+		<div class="textarea even center">
+			<strong>Digitale Auflage</strong>
+			<hr />
+			<div class="verlag">
+				<strong>Ehemalige Verläge</strong>
+				<table>
+					<tr>
+						<th>1. Auflage:</th>
+						<th>NS und Verlag, Berlin-Schöneberg</th>
+					</tr>
+					<tr>
+						<th>5. Auflage:</th>
+						<th>Verlag Deutsche Kultur-Wacht, Berlin-Schöneberg</th>
+					</tr>
+				</table>
+				<hr />
+				<span class="copyright">
+					Nachdruck von Text und Bild nicht länger strafrechtlich verfolgt</span
+				>
+			</div>
+		</div>
 		<div class="page-link-area">
 			<a href="./01.html">⇦</a><a href="./03.html">⇨</a>
 		</div>
