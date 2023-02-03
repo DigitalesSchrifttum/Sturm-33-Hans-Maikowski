@@ -5,9 +5,54 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="format.css" />
 		<title>Titel</title>
+		<style>
+			div.textarea {
+				display: flex;
+				flex-direction: column;
+				height: 100%;
+				justify-content: space-between;
+			}
+			div.frame {
+				border: solid;
+				display: flex;
+				align-items: center;
+				flex-wrap: wrap;
+				padding: 2mm;
+			}
+			span {
+				hyphens: auto;
+			}
+			h2 {
+				margin-left: 4mm;
+			}
+		</style>
 	</head>
 	<body>
-		<div class="textarea odd"></div>
+		<div class="textarea odd">
+			<hr />
+			<div>
+				<h2>Sturm 33</h2>
+				<h1 class="end">Hans Maikowski</h1>
+			</div>
+			<h3 class="end" style="align-self: stretch">
+				Geschrieben von Kameraden des Toten
+			</h3>
+			<div class="frame">
+				<span style="flex: 1 0 100%">
+					<strong
+						>Gegen die Herausgabe dieser Schrift werden seitens der NSDAP. keine
+						Bedenken erhoben.</strong
+					>
+				</span>
+				<span style="flex: 1">München 1.9.1934</span>
+				<div style="flex: 2">
+					<span>
+						Der Vorsitzende der parteiamtlichen Prüfungskommission zum Schutze
+						des NS.-Schrifttums
+					</span>
+				</div>
+			</div>
+		</div>
 		<div class="page-link-area">
 			<a href="./00.html">⇦</a><a href="./02.html">⇨</a>
 		</div>
