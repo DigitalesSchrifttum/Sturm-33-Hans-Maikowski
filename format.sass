@@ -27,8 +27,10 @@ body
 		height: $pagewidth
 
 div.textarea
-	margin: auto $pagemargin $pagemargin $pagemargin
+	margin: $pagemargin $pagemargin $pagemargin $pagemargin
 	line-height: $line-height
+	&.margin-top-auto
+		margin-top: auto
 	&.odd
 		margin-left: $pagemargin-ext
 	&.even
@@ -87,8 +89,15 @@ p
 	&.even
 		text-align: start
 
-span.spacing
-	letter-spacing: 1mm
+span
+	&.spacing
+		letter-spacing: 1mm
+	&.initial-letter
+		display: inline-flex
+		float: left
+		height: 10mm
+		width: 10mm
+		font-size: 2.3em
 
 div.page-link-area
 	display: flex

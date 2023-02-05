@@ -5,9 +5,46 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="format.css" />
 		<title>Titel</title>
+		<style>
+			body {
+				justify-content: center;
+			}
+			p.specific {
+				text-align: left;
+				hyphens: none;
+				font-size: 1.4em;
+			}
+			div.textarea {
+				margin: auto !important;
+				display: inline-flex;
+				flex-direction: column;
+				align-items: center;
+				line-height: unset;
+			}
+			.source {
+				display: flex;
+				justify-content: space-between;
+				align-self: stretch;
+			}
+		</style>
 	</head>
 	<body>
-		<div class="textarea odd"></div>
+		<div class="textarea odd">
+			<p class="no-indent-first specific">„Niemals zurück, nur vorwärts!“</p>
+			<br />
+			<p class="no-indent-first specific">
+				<span class="initial-letter">D</span>
+				er eherne Schall des Leitwortes<br />dieses tapferen, opferbereiten
+				Lebens<br />
+				klingt widerhallend in allen deutschen Herzen.<br />
+				Das lodernde Feuer seiner Seele<br />
+				kündet, ein bleibendes fanal,<br />
+				seine Taten am Himmel des Vaterlandes.<br />
+				So leben und sterben, heißt ewig leben!
+			</p>
+			<br />
+			<div class="source"><span>28. Juli 1933</span><span>Daluege</span></div>
+		</div>
 		<div class="page-link-area">
 			<a href="./04.html">⇦</a><a href="./06.html">⇨</a>
 		</div>
