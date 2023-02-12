@@ -59,6 +59,8 @@ h5
 	font-weight: bold
 	margin: 2mm 0 0 0
 	font-size: 1em
+	&.no-margin-top
+		margin-top: 0
 
 .start
 	text-align: start
@@ -80,6 +82,8 @@ p
 		text-align-last: justify
 	&.no-indent-first
 		text-indent: 0
+	&.footnote
+		font-size: 0.8em
 
 .page-number
 	margin-top: 1.5mm
@@ -120,6 +124,6 @@ div.picture-placeholder
 	flex-basis: 100%
 	width: 0
 
-hr
+div.margin
 	margin: math.div($pagemargin, 2)
 	visibility: hidden
