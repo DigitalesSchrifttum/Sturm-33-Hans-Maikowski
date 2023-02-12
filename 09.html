@@ -5,9 +5,46 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="format.css" />
 		<title>Titel</title>
+		<style>
+			body {
+				justify-content: center;
+				text-align: center;
+			}
+			img {
+				min-width: 45mm;
+				min-height: 60mm;
+				border: 5mm solid;
+				background-color: lightgrey;
+			}
+			img.start {
+				border-right: 2.5mm solid;
+			}
+			img.end {
+				border-left: 2.5mm solid;
+			}
+			.image-container {
+				display: inline-flex;
+			}
+			.a {
+				display: inline-flex;
+				flex-direction: column;
+			}
+		</style>
 	</head>
 	<body>
-		<div class="textarea odd"></div>
+		<div class="textarea odd">
+			<h1>Unsere Toten</h1>
+			<div class="image-container">
+				<div class="a">
+					<img class="start" alt="Platzhalter für Bild" />
+					<span><strong>Herbert Gatschke</strong><br />† 29. August 1932</span>
+				</div>
+				<div class="a">
+					<img class="end" alt="Platzhalter für Bild" />
+					<span><strong>Hans Maikowski</strong><br />† 30. Januar 1933</span>
+				</div>
+			</div>
+		</div>
 		<div class="page-link-area">
 			<a href="./08.html">⇦</a><a href="./10.html">⇨</a>
 		</div>
