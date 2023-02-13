@@ -4,10 +4,31 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="format.css" />
-		<title>Titel</title>
+		<title>Buchdeckel</title>
+		<style>
+			div.textarea {
+				line-height: unset;
+				flex-grow: 1;
+			}
+			h1:first-child {
+				font-size: 7em;
+			}
+			h1:last-child {
+				font-size: 6em;
+			}
+			div.bar {
+				width: 100%;
+				height: 20%;
+				background-color: black;
+			}
+		</style>
 	</head>
 	<body>
-		<div class="textarea even"></div>
+		<div class="textarea even">
+			<h1>Sturm 33</h1>
+			<h1>Hans Maikowski</h1>
+		</div>
+		<div class="bar"></div>
 		<div class="page-link-area"><a></a><a href="./01.html">⇨</a></div>
 	</body>
 </html>
