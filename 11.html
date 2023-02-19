@@ -5,9 +5,165 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="format.css" />
 		<title>Seite 11</title>
+		<style>
+			:root {
+				--hk-mes: 9mm;
+			}
+			table {
+				border-spacing: 1.5mm;
+			}
+			td {
+				position: relative;
+			}
+			img {
+				display: block;
+			}
+			.textarea {
+				display: flex;
+				justify-content: center;
+			}
+			.picture-a {
+				min-width: var(--hk-mes);
+				min-height: var(--hk-mes);
+			}
+			.picture-b {
+				min-width: calc(var(--hk-mes) * 2);
+				min-height: var(--hk-mes);
+			}
+			.picture-c {
+				min-width: var(--hk-mes);
+				min-height: calc(var(--hk-mes) * 2);
+			}
+			.inner-place {
+				position: absolute;
+				top: 0;
+				bottom: 0;
+				left: 0;
+				right: 0;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+			}
+		</style>
 	</head>
 	<body>
-		<div class="textarea odd"></div>
+		<div class="textarea odd">
+			<table cellpadding="0" cellspacing="0">
+				<tr>
+					<td>
+						<img class="picture-a" />
+					</td>
+					<td>
+						<img class="picture-b" />
+					</td>
+					<td>
+						<img class="picture-b" />
+					</td>
+					<td>
+						<img class="picture-b" />
+					</td>
+					<td>
+						<img class="picture-b" />
+					</td>
+					<td>
+						<img class="picture-b" />
+					</td>
+					<td>
+						<img class="picture-a" />
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<img class="picture-c" />
+					</td>
+					<td colspan="5" rowspan="8">
+						<div class="inner-place">center/middle</div>
+					</td>
+					<td>
+						<img class="picture-c" />
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<img class="picture-c" />
+					</td>
+					<td>
+						<img class="picture-c" />
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<img class="picture-c" />
+					</td>
+					<td>
+						<img class="picture-c" />
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<img class="picture-c" />
+					</td>
+					<td>
+						<img class="picture-c" />
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<img class="picture-c" />
+					</td>
+					<td>
+						<img class="picture-c" />
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<img class="picture-c" />
+					</td>
+					<td>
+						<img class="picture-c" />
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<img class="picture-c" />
+					</td>
+					<td>
+						<img class="picture-c" />
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<img class="picture-c" />
+					</td>
+					<td>
+						<img class="picture-c" />
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<img class="picture-a" />
+					</td>
+					<td>
+						<img class="picture-b" />
+					</td>
+					<td>
+						<img class="picture-b" />
+					</td>
+					<td>
+						<img class="picture-b" />
+					</td>
+					<td>
+						<img class="picture-b" />
+					</td>
+					<td>
+						<img class="picture-b" />
+					</td>
+					<td>
+						<img class="picture-a" />
+					</td>
+				</tr>
+			</table>
+		</div>
 		<div class="page-link-area">
 			<a href="./10.html">⇦</a><a href="./12.html">⇨</a>
 		</div>

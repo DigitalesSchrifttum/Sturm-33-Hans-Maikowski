@@ -12,7 +12,6 @@ body
 
 	width: $pagewidth
 	height: $pageheight
-	border-style: solid
 
 	margin: 0
 
@@ -25,16 +24,24 @@ body
 	&.landscape
 		width: $pageheight
 		height: $pagewidth
+		div.textarea
+			&.odd
+				margin-top: $pagemargin-ext
+			&.even
+				margin-bottom: $pagemargin-ext
+
+	&:not(.landscape)
+		div.textarea
+			&.margin-top-auto
+				margin-top: auto
+			&.odd
+				margin-left: $pagemargin-ext
+			&.even
+				margin-right: $pagemargin-ext
 
 div.textarea
 	margin: $pagemargin $pagemargin $pagemargin $pagemargin
 	line-height: $line-height
-	&.margin-top-auto
-		margin-top: auto
-	&.odd
-		margin-left: $pagemargin-ext
-	&.even
-		margin-right: $pagemargin-ext
 
 h1
 	font-size: 2.8em

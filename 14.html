@@ -10,7 +10,7 @@
 				margin: 0 !important;
 				display: flex;
 				flex-wrap: wrap;
-				height: 100%;
+				flex-grow: 1;
 			}
 			div.textarea > img,
 			div.textarea > div {
@@ -25,14 +25,11 @@
 				margin: 5mm;
 				text-align: center;
 			}
-			img {
-				background-color: lightgrey;
-			}
 		</style>
 	</head>
 	<body class="landscape">
 		<div class="textarea even">
-			<img style="flex-grow: 3" alt="Platzhalter für Bild" />
+			<img style="flex-grow: 3" />
 			<div style="flex-grow: 1">
 				<span>Frontbann 1. Kompagnie August 1925 bei Potsdam</span>
 			</div>
@@ -42,7 +39,7 @@
 					>Spandauer und Charlottenburger SA. in Nürnberg (August 1927)</span
 				>
 			</div>
-			<img style="flex-grow: 2" alt="Platzhalter für Bild" />
+			<img style="flex-grow: 2" />
 		</div>
 		<div class="page-link-area">
 			<a href="./13.html">⇦</a><a href="./15.html">⇨</a>
