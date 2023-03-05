@@ -4,10 +4,54 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="format.css" />
-		<title>Titel</title>
+		<title>Seite 19</title>
+		<style>
+			div.textarea {
+				margin: 3mm 2mm 5mm 8mm !important;
+				display: flex;
+				flex-direction: column;
+				height: 100%;
+			}
+			.figure {
+				display: flex;
+			}
+			.figure.a > .text-container {
+				margin: 10mm 0 0 0;
+				text-align: center;
+			}
+			.figure.c > .text-container {
+				margin: 3mm 0 5mm 0;
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+				text-align: center;
+			}
+		</style>
 	</head>
 	<body>
-		<div class="textarea odd"></div>
+		<div class="textarea odd">
+			<div class="figure a flex-grow-2">
+				<span class="flex-grow-2 text-container"
+					>Sturm 33 in Bernau,<br />
+					11. März 1928</span
+				>
+				<img class="flex-grow-3" />
+			</div>
+			<div class="figure b flex-grow-3">
+				<img class="flex-grow-6" />
+				<div class="flex-grow-1"></div>
+			</div>
+			<div class="figure c flex-grow-2">
+				<div class="flex-grow-2 text-container">
+					<span>Finkenkrug (3. 2. 1929)</span>
+					<span
+						>Parteitag 1927<br />
+						Am Theresienplaß in Nürnberg</span
+					>
+				</div>
+				<img class="flex-grow-3" />
+			</div>
+		</div>
 		<div class="page-link-area">
 			<a href="./18.html">⇦</a><a href="./20.html">⇨</a>
 		</div>
