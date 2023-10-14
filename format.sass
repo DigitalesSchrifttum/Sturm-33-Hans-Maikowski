@@ -2,10 +2,14 @@
 $pagewidth: 148mm
 $pageheight: 210mm
 $font: "Times New Roman", Times, serif
-$font-size: 4.00mm
-$line-height: 4.4mm
-$pagemargin: 12mm
-$pagemargin-ext: $pagemargin * 1.34
+$font-size: 3.8mm
+$line-height: 4.05mm
+$word-spacing-factor: 0.65
+$word-spacing-unit: 1mm
+$pagemargin: 15mm
+$pagemargin-top: 12mm
+$pagemargin-bottom: 20mm
+$pagemargin-ext: $pagemargin
 
 body
 	position: relative
@@ -20,54 +24,63 @@ body
 
 	font-family: $font
 	font-size: $font-size
+	line-height: $line-height
+	border: 1px dashed black
 
 	&.landscape
 		width: $pageheight
 		height: $pagewidth
 		div.textarea
 			&.odd
-				margin-top: $pagemargin-ext
+				top: $pagemargin-ext
 			&.even
-				margin-bottom: $pagemargin-ext
+				bottom: $pagemargin-ext
 
 	&:not(.landscape)
 		div.textarea
 			&.margin-top-auto
-				margin-top: auto
+				// margin-top: auto
 			&.odd
-				margin-left: $pagemargin-ext
+				left: $pagemargin-ext
 			&.even
-				margin-right: $pagemargin-ext
+				right: $pagemargin-ext
 
 div.textarea
-	margin: $pagemargin $pagemargin $pagemargin $pagemargin
-	line-height: $line-height
+	position: absolute
+	display: flex
+	flex-direction: column
+	top: $pagemargin-top
+	right: $pagemargin
+	bottom: $pagemargin-bottom
+	left: $pagemargin
+	background: lightgrey
 
 h1
 	font-size: 2.8em
-
 h2
 	font-size: 1.8em
-
 h3
 	text-align: center
-	margin: 2mm 0 2mm 0
+	margin: 0
+	font-size: 1.3em
+	font-weight: normal
+h4
+	text-align: center
+	margin: 0
 	font-size: 1.2em
 	font-weight: bold
 
-h4
+h5
 	text-align: center
 	margin: 0
 	font-size: 1.17em
 	font-weight: normal
 
-h5
+h6
 	text-align: center
 	font-weight: bold
-	margin: 2mm 0 0 0
+	margin: 0
 	font-size: 1em
-	&.no-margin-top
-		margin-top: 0
 
 .start
 	text-align: start
@@ -78,7 +91,13 @@ h5
 .center
 	text-align: center
 
+@for $i from 0 through 16
+	$add: $word-spacing-factor + $i * 0.05
+	.ws-#{$add * 1000µm}
+		word-spacing: $add * $word-spacing-unit
+
 p
+	@extend .ws-750µm
 	text-align: justify
 	hyphens: auto
 	text-indent: 1em
@@ -92,8 +111,15 @@ p
 	&.footnote
 		font-size: 0.8em
 
+hr
+	border: none
+	width: 15mm
+	margin: 0
+	height: 0.05mm
+	background-color: #000
+
 .page-number
-	margin-top: 1.5mm
+	margin-top: auto
 	font-size: 1.2em
 	&.odd
 		text-align: end
@@ -123,10 +149,6 @@ div.page-link-area
 	> a
 		cursor: pointer
 
-@media print
-	div.page-link-area
-		display: none
-
 div.picture-placeholder
 	position: relative
 	width: 50%
@@ -142,26 +164,25 @@ div.margin
 img
 	background-color: lightgray
 
-.flex-grow-1
-	flex-grow: 1
-	flex-basis: 0
+@for $i from 1 through 6
+	.flex-grow-#{$i}
+		flex-grow: $i
+		flex-basis: 0
 
-.flex-grow-2
-	flex-grow: 2
-	flex-basis: 0
+div
+	&.poem
+		display: flex
+		justify-content: center
+		> p
+			display: inline-flex
 
-.flex-grow-3
-	flex-grow: 3
-	flex-basis: 0
+.margin-bottom
+	margin-bottom: 2mm
 
-.flex-grow-4
-	flex-grow: 4
-	flex-basis: 0
-
-.flex-grow-5
-	flex-grow: 5
-	flex-basis: 0
-
-.flex-grow-6
-	flex-grow: 6
-	flex-basis: 0
+@media print
+	body
+		border: 0
+	div.textarea
+		background: none
+	div.page-link-area
+		display: none
