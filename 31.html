@@ -5,10 +5,21 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="format.css" />
 		<title>Seite 31</title>
+		<!--
+			Manuelle Anpassung, weil diese Seite ein Sonderfall mit 41 statt
+			42 Zeilen darstellt. Wie im Original erhalten die zwei Absätze
+			Abstände nach unten, welche zusammen eine Zeilenhöhe von 4,05mm
+			ergeben müssen, um die fehlende Zeile zu ersetzen.
+		-->
+		<style>
+			p.margin-adjustment {
+				margin-bottom: 2.025mm;
+			}
+		</style>
 	</head>
 	<body>
 		<div class="textarea margin-top-auto odd">
-			<p class="no-indent-first">
+			<p class="no-indent-first margin-adjustment ws-1100µm">
 				zum Schluß aufheben, teils warten sie ungeduldig auf den Anstoß der
 				Berliner Genossen. Schon sieht es aus, als ob die Versammlung ruhig
 				verlaufen sollte, da eröffnet der Kommuneführer mit einem Bierseidel die
@@ -29,18 +40,18 @@
 				wilder Flucht davon. Die Saalschlacht ist für uns gewonnen. Auch der
 				Landjäger atmet auf. Wußte er doch kaum, wie er während des ganzen
 				Kampfes feinen Gummiknüppel vor dem Zugriff der Streitenden schützen
-				sollte. Mit den Worten: „Kinder, macht mir doch keinen Arger!“ der
-				suchte er ständig, die Kämpfenden zu trennen.
+				sollte. Mit den Worten: „Kinder, macht mir doch keinen Ärger!“ versuchte
+				er ständig, die Kämpfenden zu trennen.
 			</p>
-			<p>
+			<p class="margin-adjustment ws-1150µm">
 				Im Saal spricht Dr. D. Leers das Schlußwort. Außer der SA. ist
-				allerdings kaum noch jemand zurückgeblieben. Während ein schwer
-				verwundeter SA.-Mann im Vorraum auf dem Schanktisch verbunden wird,
-				endet die Versammlung mit dem Horst Wessel-Lied.
+				allerdings kaum noch jemand zurückgeblieben. Während ein
+				schwerverwundeter SA.-Mann im Vorraum auf dem Schanktisch verbunden
+				wird, endet die Versammlung mit dem Horst Wessel-Lied.
 			</p>
-			<p class="justify-last">
-				Inzwischen ist der Nauener Bürgermeister erschienen, der uns ver bietet,
-				das Lokal zu verlassen, ehe das Potsdamer überfallkommando erschienen
+			<p class="justify-last ws-950µm">
+				Inzwischen ist der Nauener Bürgermeister erschienen, der uns verbietet,
+				das Lokal zu verlassen, ehe das Potsdamer Überfallkommando erschienen
 				sei. Da wir keine Lust haben, uns unnötig von der Polizei aufhalten zu
 				lassen, treten wir auf dem Hof an und marschieren ab. Landjäger und
 				Bürgermeister werden zur Seite gedrängt. Auf der Straße wird es noch
