@@ -5,14 +5,31 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="format.css" />
 		<title>Seite 26</title>
+		<!--
+			Manuelle Anpassung, weil diese Seite ein Sonderfall mit 41 statt
+			42 Zeilen darstellt. Die Zeilen müssen folglich in ihrer Höhe
+			gestreckt werden, um auf die selbe Höhe zu kommen.
+			Standardfall: 42 Zeilen; 4,05mm Höhe / Zeile; 170,1mm insgesamt
+			Sonderfall:   41 Zeilen; 4,10mm Höhe / Zeile; 168,1mm insgesamt
+			              Absätze erhalten je 1mm Abstand nach unten, um auf
+			              die Gesamthöhe von 170,1mm zu kommen. 
+		-->
+		<style>
+			body {
+				line-height: 4.1mm;
+			}
+			p.margin-adjustment {
+				margin-bottom: 1mm;
+			}
+		</style>
 	</head>
 	<body>
 		<div class="textarea margin-top-auto even">
-			<p class="no-indent-first">
+			<p class="no-indent-first margin-adjustment">
 				poldhain auf; Sturm 33 ist mit insgesamt 70 Mann angetreten gegen über
 				15 im Jahre 1927.
 			</p>
-			<p>
+			<p class="ws-1300µm margin-adjustment">
 				Im November 1929 wird zur Stadtverordnetenversammlung in Berlin gewählt.
 				Tag für Tag und Nacht für Nacht, wochentags und Sonntags machen wir
 				Propaganda. Am Sonnabend vor dem Wahltag findet eine letzte große
@@ -31,14 +48,14 @@
 				Kommune näher und näher kommt, als ein Zusammenstoß mit blutigsten
 				Folgen unvermeidlich scheint, zeigt Maiko, was er ist und kann: „Dicht
 				aufschließen!“ ruft er. Die 10 Mann rücken zusammen. „Tritt fassen!
-				Links, zwei, drei, vier, links....“ Zehn Paar Stiefel stampfen im
+				Links, zwei, drei, vier, links . . . .“ Zehn Paar Stiefel stampfen im
 				Gleichschritt über den Asphalt. „Singen!“ Und schon hallt ein Lied, erst
 				leise, dann laut, kräftig und taktfest über die Straße. Und siehe da,
 				die Kommune bleibt stehen, ja, sie geht zurück! Hundert ungebändigte
 				menschliche Raubtiere weichen vor einem gut disziplinierten Trupp von 10
 				Mann zurück.
 			</p>
-			<p class="justify-last">
+			<p class="justify-last ws-1300µm">
 				Anfang 1930 zählt der Sturm schon 100 Mann. Gingen wir bisher von Zeit
 				zu Zeit dem roten Terror aus dem Wege, um Verluste zu vermeiden, so wird
 				das jetzt grundsätzlich anders. In keinem Fall verzichten wir mehr auf
