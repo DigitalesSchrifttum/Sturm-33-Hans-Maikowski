@@ -4,15 +4,32 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="format.css" />
-		<title>Titel</title>
+		<title>Seite 28</title>
+		<!--
+			Manuelle Anpassung, weil diese Seite ein Sonderfall mit 41 statt
+			42 Zeilen darstellt. Die Zeilen müssen folglich in ihrer Höhe
+			gestreckt werden, um auf die selbe Höhe zu kommen.
+			Standardfall: 42 Zeilen; 4,05mm Höhe / Zeile; 170,1mm insgesamt
+			Sonderfall:   40 Zeilen; 4,25mm Höhe / Zeile; 170,0mm insgesamt
+			              Erster Absatz erhält 0,1mm Abstand nach unten, um
+							  auf die Gesamthöhe von 170,1mm zu kommen.
+		-->
+		<style>
+			body {
+				line-height: 4.25mm;
+			}
+			p.margin-adjustment {
+				margin-bottom: 0.1mm;
+			}
+		</style>
 	</head>
 	<body>
 		<div class="textarea margin-top-auto even">
-			<p class="no-indent-first"></p>
+			<p class="no-indent-first ws-850µm margin-adjustment">
 				versucht die KPD., durch Lüge und Verleumdung die Massen gegen uns
 				aufzuheben.
 			</p>
-			<p>
+			<p class="ws-1050µm">
 				Zu dieser Zeit wird der Sturmführer Hahn zu einer kommunistischen
 				Versammlung in „Ahlerts Festsälen“ zur Diskussion herausgefordert. Stark
 				verspätet trifft er mit zwei Kameraden ein. Die Versammlung ist von etwa
@@ -31,7 +48,7 @@
 				Abends, der kommunistische Abgeordnete Kasper, das Wort. „Wenn Sie den
 				Sozialismus wollen, müssen Sie sofort aus der NSDAP. austreten und unter
 				der kommunistischen Fahne kämpfen. Denn Adolf Hitler schreibt selbst im
-				‚Völkischen Beobachter‘ vom..: Der Nationalsozialismus hat mit
+				‚Völkischen Beobachter‘ vom . . : Der Nationalsozialismus hat mit
 				Sozialismus nichts zu tun!!!“ Dabei fuchtelt er mit einem
 				Zeitungsausschnitt umher. „Zeigen Sie mir diesen ‚Völkischen
 				Beobachter‘!“ unterbricht ihn Hahn. Mäuschenstille wird es im Saal,
@@ -48,10 +65,9 @@
 				Nationalsozialisten die erbauliche Versammlung verlassen. Kasper und
 				Altmann fordern noch die Massen auf, am nächsten Sonntag unseren
 				Demonstrationszug durch Charlottenburg mit proletarischen Fäusten
-				auseinander zu treiben. Die Massen sind auch am Sonntag da, nur Kasper
-				und Altmann fehlen.
+				auseinanderzutreiben. Die Massen sind auch am Sonntag da, nur Kasper und
+				Altmann fehlen.
 			</p>
-
 			<div class="page-number even">28</div>
 		</div>
 		<div class="page-link-area">

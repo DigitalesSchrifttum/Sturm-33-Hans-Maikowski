@@ -5,11 +5,64 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="format.css" />
 		<title>Seite 29</title>
+		<!--
+			Manuelle Anpassung, weil diese Seite ein Sonderfall darstellt.
+			Diese Seite ist die Nachfolgeseite jener Seite, welche nur 40
+			statt der üblichen 42 Zeilen pro Seite hat. Die Zeilen der
+			vorhergehenden Seite wurden in der Höhe gestreckt und des
+			gleichmäßigen Bildes wegen, müssen die Zeilen dieser Seite
+			damit auch gestreckt werden.
+			42 Zeilen darstellt. Die Zeilen müssen folglich in ihrer Höhe
+			gestreckt werden, um auf die selbe Höhe zu kommen.
+			Standardfall: 42 Zeilen; 4,05mm Höhe / Zeile; 170,1mm insgesamt
+			Sonderfall:   40 Zeilen; 4,25mm Höhe / Zeile; 170,0mm insgesamt
+			              Erster Absatz erhält 0,1mm Abstand nach unten, um
+							  auf die Gesamthöhe von 170,1mm zu kommen.
+		-->
+		<style>
+			body {
+				line-height: 4.25mm;
+			}
+			h6.margin-adjustment {
+				margin-bottom: 0.1mm;
+			}
+			div.image-wrapper {
+				position: relative;
+			}
+			img {
+				background: green;
+				position: absolute;
+				height: 100%;
+				width: 100%;
+			}
+		</style>
 	</head>
 	<body>
 		<div class="textarea margin-top-auto odd">
-			<h6>Kampf vor den Toren Berlins (1930).</h6>
-			<p>
+			<div class="image-wrapper">
+				<img />
+				<br />
+				<br />
+				<br />
+				<br />
+				<br />
+				<br />
+				<br />
+				<br />
+				<br />
+				<br />
+				<br />
+				<br />
+				<br />
+				<br />
+				<br />
+				<br />
+				<br />
+				<br />
+				<br />
+			</div>
+			<h6 class="margin-adjustment">Kampf vor den Toren Berlins (1930).</h6>
+			<p class="ws-900µm">
 				Gruppe 2 vom Trupp Lützow sitzt gerade bei einem zackigen Gruppenabend,
 				als das Telefon klingelt. Ein Anruf der Standarte: „Kommune überfällt
 				das Nazidorf Ließen bei Nauen, alle verfügbaren SA.-Männer müssen sofort
@@ -26,7 +79,7 @@
 				Kommune allein den Weg zur Heimat gezeigt. Der Lietzener SA.-Führer war
 				schwer verletzt auf dem Kampfplatz geblieben.
 			</p>
-			<p class="justify-last">
+			<p class="justify-last ws-1150µm">
 				Nach kurzem Aufenthalt marschieren wir in ruhigem Schritt nach Nauen
 				zurück. Als wir die ersten Häuser des Städtchens erreichen, hören wir
 				Schalmeienmusik. Aha! Das Volkshaus! Da werden die „Brieten“ drin
