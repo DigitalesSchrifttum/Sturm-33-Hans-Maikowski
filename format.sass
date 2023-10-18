@@ -32,27 +32,22 @@ body
 		height: $pagewidth
 		div.textarea
 			&.odd
-				top: $pagemargin-ext
+				margin-top: $pagemargin-ext
 			&.even
-				bottom: $pagemargin-ext
+				margin-bottom: $pagemargin-ext
 
 	&:not(.landscape)
 		div.textarea
 			&.odd
-				left: $pagemargin-ext
+				margin-left: $pagemargin-ext
 			&.even
-				right: $pagemargin-ext
+				margin-right: $pagemargin-ext
 
 div.textarea
-	position: absolute
-	display: flex
-	flex-direction: column
-	top: $pagemargin-top
-	right: $pagemargin
-	bottom: $pagemargin-bottom
-	left: $pagemargin
+	position: relative
+	flex-grow: 1
+	margin: $pagemargin-top $pagemargin $pagemargin-bottom $pagemargin
 	background: lightgrey
-
 h1
 	font-size: 2.8em
 h2
@@ -117,7 +112,9 @@ hr
 	background-color: #000
 
 .page-number
-	margin-top: auto
+	position: absolute
+	bottom: 0
+	width: 100%
 	font-size: 1.2em
 	&.odd
 		text-align: end
