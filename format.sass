@@ -10,6 +10,7 @@ $pagemargin: 15mm
 $pagemargin-top: 12mm
 $pagemargin-bottom: 20mm
 $pagemargin-ext: $pagemargin
+$text-border: 0.15mm
 
 body
 	position: relative
@@ -173,6 +174,15 @@ div
 
 .margin-bottom
 	margin-bottom: 2mm
+
+.text-border,.text-border-webkit
+	color: white
+
+.text-border
+	text-shadow: -1*$text-border 0 black, 0 $text-border black, $text-border 0 black, 0 -1*$text-border black
+
+.text-border-webkit
+	-webkit-text-stroke: $text-border black
 
 @media print
 	body

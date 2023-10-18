@@ -15,42 +15,50 @@
 			div.frame {
 				border: solid;
 				display: flex;
+				justify-content: space-between;
 				align-items: center;
 				flex-wrap: wrap;
 				padding: 2mm;
 			}
+			p.klausel {
+				word-spacing: 0;
+				flex: 1 0 100%;
+				font-weight: bold;
+			}
 			span {
 				hyphens: auto;
 			}
-			h2 {
-				margin-left: 4mm;
+			h3 {
+				font-weight: bold;
+				text-align: start;
 			}
 		</style>
+		<!---webkit-text-stroke: 0.2mm black;
+				-->
 	</head>
 	<body>
 		<!-- Die Seite 1 beginnt im Buch rechts! -->
 		<div class="textarea odd">
-			<div>
-				<h2>Sturm 33</h2>
-				<h1 class="end">Hans Maikowski</h1>
+			<div style="display: inline-block; align-self: end">
+				<p><br /></p>
+				<h1>Sturm 33</h1>
+				<p><br /></p>
+				<h2 class="text-border-webkit">Hans Maikowski</h2>
+				<p><br /></p>
+				<p><br /></p>
+				<h3>Geschrieben von Kameraden des Toten</h3>
 			</div>
-			<h3 class="end" style="align-self: stretch">
-				Geschrieben von Kameraden des Toten
-			</h3>
 			<div class="frame">
-				<span style="flex: 1 0 100%">
-					<strong
-						>„Gegen die Herausgabe dieser Schrift werden seitens der NSDAP.
-						keine Bedenken erhoben.“</strong
-					>
+				<p class="no-indent-first justify-last klausel">
+					Gegen die Herausgabe dieser Schrift bestehen seitens der NSDAP. keine
+					Bedenken. – Die Schrift wird in der NS.-Bibliographie geführt
+				</p>
+				<p style="flex: 1 0 100%"><br /></p>
+				<span>Berlin, 28. Sept. 1942</span>
+				<span>
+					Der Vorsitzende der parteiamtlichen Prüfungs-<br />kommission zum
+					Schutze des NS.-Schrifttums
 				</span>
-				<span style="flex: 1">München 1.9.1934</span>
-				<div style="flex: 2">
-					<span>
-						Der Vorsitzende der parteiamtlichen Prüfungskommission zum Schutze
-						des NS.-Schrifttums
-					</span>
-				</div>
 			</div>
 		</div>
 		<div class="page-link-area">
