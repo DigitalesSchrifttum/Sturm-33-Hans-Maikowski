@@ -1,0 +1,22 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+ "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title>OCR output</title>
+</head>
+<body>
+<p><span class="ocr_line" title="bbox 202 216 275 420"><span class="ocrx_word" title="bbox 202 216 275 420; x_wconf 23">;</span></span></p>
+<p><span class="ocr_line" title="bbox 206 516 279 701"><span class="ocrx_word" title="bbox 206 516 279 701; x_wconf 48">}</span></span></p>
+<p><span class="ocr_line" title="bbox 171 561 270 991"><span class="ocrx_word" title="bbox 171 561 224 991; x_wconf 26">;</span></span></p>
+<p><span class="ocr_line" title="bbox 185 1399 216 2520"><span class="ocrx_word" title="bbox 185 1399 216 2520; x_wconf 71">\</span></span></p>
+<p><span class="ocr_line" title="bbox 390 143 1141 224"><span class="ocrx_word" title="bbox 390 144 863 224; x_wconf 79">Zehntaufende</span> <span class="ocrx_word" title="bbox 900 143 1141 220; x_wconf 88">grüßen</span></span></p>
+<p><span class="ocr_line" title="bbox 392 241 1143 322"><span class="ocrx_word" title="bbox 392 249 477 310; x_wconf 91">im</span> <span class="ocrx_word" title="bbox 569 245 934 322; x_wconf 37">£uftgarien</span> <span class="ocrx_word" title="bbox 1027 241 1143 304; x_wconf 85">den</span></span></p>
+<p><span class="ocr_line" title="bbox 592 343 958 417"><span class="ocrx_word" title="bbox 592 343 958 417; x_wconf 85">Trauerzug</span></span></p>
+<p><span class="ocr_line" title="bbox 469 2144 1132 2220"><span class="ocrx_word" title="bbox 469 2147 600 2211; x_wconf 91">Der</span> <span class="ocrx_word" title="bbox 653 2144 1132 2220; x_wconf 51">Leichhenwagen</span></span></p>
+<p><span class="ocr_line" title="bbox 471 2241 1134 2321"><span class="ocrx_word" title="bbox 471 2245 653 2321; x_wconf 84">Hans</span> <span class="ocrx_word" title="bbox 690 2241 1134 2307; x_wconf 81">Maikowskis</span></span></p>
+<p><span class="ocr_line" title="bbox 578 2341 1029 2419"><span class="ocrx_word" title="bbox 578 2341 869 2419; x_wconf 48">begleifet</span> <span class="ocrx_word" title="bbox 905 2358 1029 2403; x_wconf 92">von</span></span></p>
+<p><span class="ocr_line" title="bbox 474 2439 1138 2505"><span class="ocrx_word" title="bbox 474 2440 648 2505; x_wconf 56">SYA.-</span> <span class="ocrx_word" title="bbox 662 2439 1005 2504; x_wconf 56">Männern</span> <span class="ocrx_word" title="bbox 1029 2440 1138 2503; x_wconf 90">des</span></span></p>
+<p><span class="ocr_line" title="bbox 624 2537 992 2602"><span class="ocrx_word" title="bbox 624 2537 890 2602; x_wconf 56">Stiurms</span> <span class="ocrx_word" title="bbox 915 2538 992 2598; x_wconf 96">33</span></span></p>
+</body>
+</html>

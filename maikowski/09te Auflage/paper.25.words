@@ -1,0 +1,16 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+ "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title>OCR output</title>
+</head>
+<body>
+<p><span class="ocr_line" title="bbox 4586 3280 4611 3296"><span class="ocrx_word" title="bbox 4586 3280 4611 3296; x_wconf 30">'</span></span></p>
+<p><span class="ocr_line" title="bbox 4635 2242 4762 3036"><span class="ocrx_word" title="bbox 4635 2956 4759 3036; x_wconf 69">ng</span> <span class="ocrx_word" title="bbox 4647 2523 4762 2928; x_wconf 85">Maikowski</span> <span class="ocrx_word" title="bbox 4658 2380 4746 2491; x_wconf 54">mit</span> <span class="ocrx_word" title="bbox 4628 2177 4754 2361; x_wconf 40">der-,</span></span></p>
+<p><span class="ocr_line" title="bbox 4618 3039 4662 3229"><span class="ocrx_word" title="bbox 4654 3224 4662 3229; x_wconf 61">;</span> <span class="ocrx_word" title="bbox 4618 3133 4656 3186; x_wconf 57">&quot;»&quot;</span> <span class="ocrx_word" title="bbox 4651 3039 4654 3043; x_wconf 16">7</span></span></p>
+<p><span class="ocr_line" title="bbox 4652 3041 4691 3217"><span class="ocrx_word" title="bbox 4661 3150 4691 3217; x_wconf 36">W</span> <span class="ocrx_word" title="bbox 4652 3041 4675 3057; x_wconf 24">K</span></span></p>
+<p><span class="ocr_line" title="bbox 4667 3037 4750 3146"><span class="ocrx_word" title="bbox 4667 3037 4750 3262; x_wconf 0">,Da</span></span></p>
+<p><span class="ocr_line" title="bbox 4724 3132 4784 3299"><span class="ocrx_word" title="bbox 4754 3291 4772 3299; x_wconf 72">#</span> <span class="ocrx_word" title="bbox 4757 3257 4784 3275; x_wconf 11">n</span> <span class="ocrx_word" title="bbox 4773 3199 4778 3204; x_wconf 0">7</span> <span class="ocrx_word" title="bbox 4724 3132 4782 3166; x_wconf 55">1,</span></span></p>
+</body>
+</html>
