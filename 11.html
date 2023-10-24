@@ -9,40 +9,102 @@
 			:root {
 				--hk-mes: 9mm;
 			}
-			table {
-				border-spacing: 1.5mm;
+			body {
+				line-height: 4.3mm;
 			}
-			td {
+			p {
+				margin-left: 0;
+				text-indent: 0;
+			}
+			h3 {
+				font-size: 1.5em;
+				font-weight: bold;
+				margin-bottom: 2mm;
+			}
+			h5 {
+				font-size: 1em;
+				font-weight: bold;
+				margin-bottom: 1.5mm;
+			}
+			table {
+				align-self: flex-start;
+				border-spacing: 1.15mm;
+			}
+			table.inside {
+				border-spacing: 0;
+			}
+			table.a {
+				margin: 0 4mm 0 4mm;
+			}
+			table.b {
+				margin: 0 auto 0 auto;
+			}
+			table.inside > tbody > tr > td {
 				position: relative;
+				vertical-align: top;
+			}
+			table.inside > tbody > tr > td:first-child {
+				text-align: right;
+				padding-right: 2mm;
+			}
+			table.a > tbody > tr > td:nth-child(2) {
+				width: 38%;
+			}
+			table.b > tbody > tr > td:nth-child(3) {
+				text-align: left;
 			}
 			img {
 				display: block;
+			}
+			ol {
+				text-align: justify;
 			}
 			.textarea {
 				display: flex;
 				justify-content: center;
 			}
 			.picture-a {
-				min-width: var(--hk-mes);
-				min-height: var(--hk-mes);
+				width: var(--hk-mes);
+				height: var(--hk-mes);
 			}
 			.picture-b {
-				min-width: calc(var(--hk-mes) * 2);
-				min-height: var(--hk-mes);
+				width: calc(var(--hk-mes) * 2);
+				height: var(--hk-mes);
 			}
 			.picture-c {
-				min-width: var(--hk-mes);
-				min-height: calc(var(--hk-mes) * 2);
+				width: var(--hk-mes);
+				height: calc(var(--hk-mes) * 2);
 			}
-			.inner-place {
+			.inline-table {
+				display: inline-table;
+			}
+			.no-padding {
+				padding: 0;
+			}
+			tr.month {
 				position: absolute;
-				top: 0;
-				bottom: 0;
-				left: 0;
-				right: 0;
-				display: flex;
-				align-items: center;
-				justify-content: center;
+			}
+			.m {
+				width: 0;
+			}
+			.n {
+				margin-left: -4mm;
+			}
+			.h {
+				color: transparent;
+			}
+			.h::before {
+				position: absolute;
+				content: "„";
+				bottom: 1.3mm;
+				color: #000;
+			}
+			.h:empty::before {
+				left: 3mm;
+			}
+			.leading-dots {
+				float: right;
+				white-space: nowrap;
 			}
 		</style>
 	</head>
@@ -51,118 +113,424 @@
 			<table cellpadding="0" cellspacing="0">
 				<tr>
 					<td>
-						<img class="picture-a" />
+						<img src="images/04a_corner.svg" class="picture-a" />
 					</td>
 					<td>
-						<img class="picture-b" />
+						<img src="images/04b_edge_h.svg" class="picture-b" />
 					</td>
 					<td>
-						<img class="picture-b" />
+						<img src="images/04b_edge_h.svg" class="picture-b" />
 					</td>
 					<td>
-						<img class="picture-b" />
+						<img src="images/04b_edge_h.svg" class="picture-b" />
 					</td>
 					<td>
-						<img class="picture-b" />
+						<img src="images/04b_edge_h.svg" class="picture-b" />
 					</td>
 					<td>
-						<img class="picture-b" />
+						<img src="images/04b_edge_h.svg" class="picture-b" />
 					</td>
 					<td>
-						<img class="picture-a" />
+						<img src="images/04a_corner.svg" class="picture-a" />
 					</td>
 				</tr>
 				<tr>
 					<td>
-						<img class="picture-c" />
+						<img src="images/04c_edge_v.svg" class="picture-c" />
 					</td>
-					<td colspan="5" rowspan="8">
-						<div class="inner-place">center/middle</div>
+					<td
+						colspan="5"
+						rowspan="8"
+						class="center"
+						style="vertical-align: top"
+					>
+						<p><br /></p>
+						<h3>Ehrentafel</h3>
+						<h4>für die Gefangenen des Sturms 33</h4>
+						<p><br /></p>
+						<h5>Rechtskräftig verurteilt wurden:</h5>
+						<table class="inside a" cellpadding="0" cellspacing="0">
+							<tr>
+								<td>1.</td>
+								<td colspan="7">
+									<p class="justify-last">
+										Paul Foyer zu 5 Jahren 4 Monaten Zuchthaus.
+									</p>
+								</td>
+							</tr>
+							<tr>
+								<td>2.</td>
+								<td colspan="7">
+									<p class="justify-last">
+										Fritz Domming zu 2 Jahren 4 Monaten Zucht-
+									</p>
+									<p>&nbsp;haus, 2 Jahren Gefängnis.</p>
+								</td>
+							</tr>
+							<tr>
+								<td>3.</td>
+								<td>
+									<p>
+										Kurt Becker<span class="leading-dots">. . . .&nbsp;</span>
+									</p>
+								</td>
+								<td>zu</td>
+								<td>6</td>
+								<td>Jahren</td>
+								<td colspan="2"></td>
+								<td>Gefängnis</td>
+							</tr>
+							<tr>
+								<td>4.</td>
+								<td>
+									<p>
+										Paul Markowski<span class="leading-dots">. .&nbsp;</span>
+									</p>
+								</td>
+								<td><span class="h">„</span></td>
+								<td>5</td>
+								<td><span class="h">„</span></td>
+								<td colspan="2"></td>
+								<td><span class="h">„</span></td>
+							</tr>
+							<tr>
+								<td>5.</td>
+								<td>
+									<p>
+										Gerhard Neubert<span class="leading-dots">. .&nbsp;</span>
+									</p>
+								</td>
+								<td><span class="h">„</span></td>
+								<td>4</td>
+								<td><span class="h">„</span></td>
+								<td colspan="2"></td>
+								<td><span class="h">„</span></td>
+							</tr>
+							<tr>
+								<td>6.</td>
+								<td>
+									<p>
+										Hermann Friede<span class="leading-dots">. .&nbsp;</span>
+									</p>
+								</td>
+								<td><span class="h">„</span></td>
+								<td>3</td>
+								<td><span class="h">„</span></td>
+								<td><div class="m n">6</div></td>
+								<td><div class="m">Mon.</div></td>
+								<td><span class="h">„</span></td>
+							</tr>
+							<tr>
+								<td>7.</td>
+								<td>
+									<p>
+										Martin Froschauer<span class="leading-dots">.&nbsp;</span>
+									</p>
+								</td>
+								<td><span class="h">„</span></td>
+								<td>3</td>
+								<td><span class="h">„</span></td>
+								<td colspan="2"></td>
+								<td><span class="h">„</span></td>
+							</tr>
+							<tr>
+								<td>8.</td>
+								<td>
+									<p>
+										Albert Berlich<span class="leading-dots">. . .&nbsp;</span>
+									</p>
+								</td>
+								<td><span class="h">„</span></td>
+								<td>2</td>
+								<td><span class="h">„</span></td>
+								<td><div class="m n">6</div></td>
+								<td>
+									<span class="h"></span>
+								</td>
+								<td><span class="h">„</span></td>
+							</tr>
+							<tr>
+								<td>9.</td>
+								<td>
+									<p>
+										Max Liebscher<span class="leading-dots">. . .&nbsp;</span>
+									</p>
+								</td>
+								<td><span class="h">„</span></td>
+								<td>2</td>
+								<td><span class="h">„</span></td>
+								<td><div class="m n">6</div></td>
+								<td>
+									<span class="h"></span>
+								</td>
+								<td><span class="h">„</span></td>
+							</tr>
+							<tr>
+								<td>10.</td>
+								<td>
+									<p>
+										Konrad Stief<span class="leading-dots">. . . .&nbsp;</span>
+									</p>
+								</td>
+								<td><span class="h">„</span></td>
+								<td>2</td>
+								<td><span class="h">„</span></td>
+								<td><div class="m n">6</div></td>
+								<td>
+									<span class="h"></span>
+								</td>
+								<td><span class="h">„</span></td>
+							</tr>
+							<tr>
+								<td>11.</td>
+								<td>
+									<p>Konrad Domming<span class="leading-dots">.&nbsp;</span></p>
+								</td>
+								<td><span class="h">„</span></td>
+								<td>1</td>
+								<td><span class="h">„</span></td>
+								<td colspan="2"></td>
+								<td><span class="h">„</span></td>
+							</tr>
+							<tr>
+								<td>12.</td>
+								<td>
+									<p>Konrad Brinkmeyer</p>
+								</td>
+								<td><span class="h">„</span></td>
+								<td>1</td>
+								<td><span class="h">„</span></td>
+								<td colspan="2"></td>
+								<td><span class="h">„</span></td>
+							</tr>
+							<tr>
+								<td>13.</td>
+								<td>
+									<p>
+										Karl Gilowy<span class="leading-dots">. . . .&nbsp;</span>
+									</p>
+								</td>
+								<td><span class="h">„</span></td>
+								<td colspan="2"></td>
+								<td><div class="m n">6</div></td>
+								<td><span class="h"></span></td>
+								<td><span class="h">„</span></td>
+							</tr>
+						</table>
+						<p><br /></p>
+						<h5>Ferner saßen in Untersuchungshaft:</h5>
+						<table class="inside b" cellpadding="0" cellspacing="0">
+							<tr>
+								<td>14.</td>
+								<td>
+									<p>
+										Hans Maikowski<span class="leading-dots"
+											>. . . .&nbsp;</span
+										>
+									</p>
+								</td>
+								<td>2</td>
+								<td>Monate</td>
+							</tr>
+							<tr>
+								<td>15.</td>
+								<td>
+									<p>
+										Rolf Wesemann<span class="leading-dots">. . . .&nbsp;</span>
+									</p>
+								</td>
+								<td>6</td>
+								<td><span class="h">„</span></td>
+							</tr>
+							<tr>
+								<td>16.</td>
+								<td>
+									<p>
+										Ralf Deh<span class="leading-dots"
+											>. . . . . . . .&nbsp;</span
+										>
+									</p>
+								</td>
+								<td>5</td>
+								<td><span class="h">„</span></td>
+							</tr>
+							<tr>
+								<td>17.</td>
+								<td>
+									<p>
+										Kurt Pieper<span class="leading-dots"
+											>. . . . . . .&nbsp;</span
+										>
+									</p>
+								</td>
+								<td>5</td>
+								<td><span class="h">„</span></td>
+							</tr>
+							<tr>
+								<td>18.</td>
+								<td>
+									<p>
+										Herbert Wittke<span class="leading-dots"
+											>. . . . .&nbsp;</span
+										>
+									</p>
+								</td>
+								<td>5</td>
+								<td><span class="h">„</span></td>
+							</tr>
+							<tr>
+								<td>19.</td>
+								<td><p>Traugott Angerstein . .&nbsp;</p></td>
+								<td>2½</td>
+								<td><span class="h">„</span></td>
+							</tr>
+							<tr>
+								<td>20.</td>
+								<td>
+									<p>
+										Heinz Schubert<span class="leading-dots"
+											>. . . .&nbsp;</span
+										>
+									</p>
+								</td>
+								<td>2½</td>
+								<td><span class="h">„</span></td>
+							</tr>
+							<tr>
+								<td>21.</td>
+								<td>
+									<p>
+										Georg Amphlett<span class="leading-dots"
+											>. . . .&nbsp;</span
+										>
+									</p>
+								</td>
+								<td>1½</td>
+								<td><span class="h">„</span></td>
+							</tr>
+							<tr>
+								<td>22.</td>
+								<td>
+									<p>
+										Alfred Boelcke<span class="leading-dots"
+											>. . . . .&nbsp;</span
+										>
+									</p>
+								</td>
+								<td>1½</td>
+								<td><span class="h">„</span></td>
+							</tr>
+							<tr>
+								<td>23.</td>
+								<td>
+									<p>
+										Fritz Hahn<span class="leading-dots"
+											>. . . . . . .&nbsp;</span
+										>
+									</p>
+								</td>
+								<td>1½</td>
+								<td><span class="h">„</span></td>
+							</tr>
+							<tr>
+								<td>24.</td>
+								<td>
+									<p>
+										Erich Gamerski<span class="leading-dots"
+											>. . . .&nbsp;</span
+										>
+									</p>
+								</td>
+								<td>1½</td>
+								<td><span class="h">„</span></td>
+							</tr>
+						</table>
 					</td>
 					<td>
-						<img class="picture-c" />
+						<img src="images/04c_edge_v.svg" class="picture-c" />
 					</td>
 				</tr>
 				<tr>
 					<td>
-						<img class="picture-c" />
+						<img src="images/04c_edge_v.svg" class="picture-c" />
 					</td>
 					<td>
-						<img class="picture-c" />
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<img class="picture-c" />
-					</td>
-					<td>
-						<img class="picture-c" />
+						<img src="images/04c_edge_v.svg" class="picture-c" />
 					</td>
 				</tr>
 				<tr>
 					<td>
-						<img class="picture-c" />
+						<img src="images/04c_edge_v.svg" class="picture-c" />
 					</td>
 					<td>
-						<img class="picture-c" />
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<img class="picture-c" />
-					</td>
-					<td>
-						<img class="picture-c" />
+						<img src="images/04c_edge_v.svg" class="picture-c" />
 					</td>
 				</tr>
 				<tr>
 					<td>
-						<img class="picture-c" />
+						<img src="images/04c_edge_v.svg" class="picture-c" />
 					</td>
 					<td>
-						<img class="picture-c" />
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<img class="picture-c" />
-					</td>
-					<td>
-						<img class="picture-c" />
+						<img src="images/04c_edge_v.svg" class="picture-c" />
 					</td>
 				</tr>
 				<tr>
 					<td>
-						<img class="picture-c" />
+						<img src="images/04c_edge_v.svg" class="picture-c" />
 					</td>
 					<td>
-						<img class="picture-c" />
+						<img src="images/04c_edge_v.svg" class="picture-c" />
 					</td>
 				</tr>
 				<tr>
 					<td>
-						<img class="picture-a" />
+						<img src="images/04c_edge_v.svg" class="picture-c" />
 					</td>
 					<td>
-						<img class="picture-b" />
+						<img src="images/04c_edge_v.svg" class="picture-c" />
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<img src="images/04c_edge_v.svg" class="picture-c" />
 					</td>
 					<td>
-						<img class="picture-b" />
+						<img src="images/04c_edge_v.svg" class="picture-c" />
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<img src="images/04c_edge_v.svg" class="picture-c" />
 					</td>
 					<td>
-						<img class="picture-b" />
+						<img src="images/04c_edge_v.svg" class="picture-c" />
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<img src="images/04a_corner.svg" class="picture-a" />
 					</td>
 					<td>
-						<img class="picture-b" />
+						<img src="images/04b_edge_h.svg" class="picture-b" />
 					</td>
 					<td>
-						<img class="picture-b" />
+						<img src="images/04b_edge_h.svg" class="picture-b" />
 					</td>
 					<td>
-						<img class="picture-a" />
+						<img src="images/04b_edge_h.svg" class="picture-b" />
+					</td>
+					<td>
+						<img src="images/04b_edge_h.svg" class="picture-b" />
+					</td>
+					<td>
+						<img src="images/04b_edge_h.svg" class="picture-b" />
+					</td>
+					<td>
+						<img src="images/04a_corner.svg" class="picture-a" />
 					</td>
 				</tr>
 			</table>
+			<div class="page-number odd">11</div>
 		</div>
 		<div class="page-link-area">
 			<a href="./10.html">⇦</a><a href="./12.html">⇨</a>
