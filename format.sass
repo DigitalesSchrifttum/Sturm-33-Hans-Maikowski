@@ -87,6 +87,14 @@ h6
 .center
 	text-align: center
 
+.fill
+	position: absolute!important
+	margin: 0!important
+	top: 0
+	bottom: 0
+	left: 0
+	right: 0
+
 @for $i from 0 through 16
 	$add: $word-spacing-factor + $i * 0.05
 	.ws-#{$add * 1000µm}
@@ -177,6 +185,7 @@ div
 
 @media print
 	body
+		user-select: none
 		border: 0
 	div.textarea
 		background: none
@@ -189,11 +198,17 @@ div
 		margin: 0
 
 // watermark
-body::after
-	content: '@Voelkischer_Botschafter'
-	position: absolute
-	top: 47%
-	left: -7%
-	opacity: 20%
-	font-size: xxx-large
-	transform: rotate(45deg)
+body
+	&::after
+		content: '@Voelkischer_Botschafter'
+		position: absolute
+		color: red
+		opacity: 25%
+		font-size: xxx-large
+		transform: rotate(45deg)
+	&.landscape::after
+		top: 47%
+		left: 7%
+	&:not(.landscape)::after
+		top: 47%
+		left: -7%

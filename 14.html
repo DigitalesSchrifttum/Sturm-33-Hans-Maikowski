@@ -6,40 +6,45 @@
 		<link rel="stylesheet" href="format.css" />
 		<title>Seite 14</title>
 		<style>
-			div.textarea {
-				margin: 0 !important;
-				display: flex;
-				flex-wrap: wrap;
-				flex-grow: 1;
+			img {
+				height: 100%;
+				object-fit: contain;
 			}
-			div.textarea > img,
-			div.textarea > div {
+			span {
+				text-align: center;
+				padding-bottom: 6%;
+			}
+			.textarea {
+				display: flex;
+				flex-direction: column;
+				align-items: stretch;
+			}
+			.top,
+			.bottom {
 				height: 50%;
-				flex-basis: 0;
-			}
-			div.textarea > div {
 				display: flex;
+				flex-wrap: nowrap;
 				align-items: flex-end;
 			}
-			div.textarea > div > span {
-				margin: 5mm;
-				text-align: center;
+			@media print {
+				@page {
+					size: A5 landscape;
+				}
 			}
 		</style>
 	</head>
 	<body class="landscape">
-		<div class="textarea even">
-			<img style="flex-grow: 3" />
-			<div style="flex-grow: 1">
+		<div class="textarea even fill">
+			<div class="top">
+				<img src="./images/06.png" />
 				<span>Frontbann 1. Kompagnie August 1925 bei Potsdam</span>
 			</div>
-			<span class="force-wrap"></span>
-			<div style="flex-grow: 1">
+			<div class="bottom">
 				<span
 					>Spandauer und Charlottenburger SA. in Nürnberg (August 1927)</span
 				>
+				<img src="./images/07.png" />
 			</div>
-			<img style="flex-grow: 2" />
 		</div>
 		<div class="page-link-area">
 			<a href="./13.html">⇦</a><a href="./15.html">⇨</a>
