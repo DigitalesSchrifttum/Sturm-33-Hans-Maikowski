@@ -6,24 +6,26 @@
 		<link rel="stylesheet" href="format.css" />
 		<title>Seite 13</title>
 		<style>
-			div.textarea {
+			img {
+				max-width: 155mm;
+			}
+			.textarea {
 				display: flex;
 				flex-direction: column;
-				flex-grow: 1;
+				justify-content: space-between;
+				align-items: center;
 			}
-			img {
-				flex-grow: 1;
-			}
-			.distance {
-				height: 9mm;
-				vertical-align: bottom;
+			@media print {
+				@page {
+					size: A5 landscape;
+				}
 			}
 		</style>
 	</head>
 	<body class="landscape">
 		<div class="textarea odd">
-			<img />
-			<div class="center distance">
+			<img src="./images/05.png" />
+			<div>
 				Die „Turnerschaft Ulrich v. Hutten“ beim deutschen Tag in Halle 1924
 			</div>
 		</div>

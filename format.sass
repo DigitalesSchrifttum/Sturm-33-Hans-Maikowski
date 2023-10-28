@@ -28,6 +28,8 @@ body
 	line-height: $line-height
 	border: 1px dashed black
 
+	user-select: none
+
 	&.landscape
 		width: $pageheight
 		height: $pagewidth
@@ -182,7 +184,16 @@ div
 		display: none
 	img
 		background-color: white
+	@page
+		size: A5
+		margin: 0
 
-@page
-	size: A5
-	margin: 0
+// watermark
+body::after
+	content: '@Voelkischer_Botschafter'
+	position: absolute
+	top: 47%
+	left: -7%
+	opacity: 20%
+	font-size: xxx-large
+	transform: rotate(45deg)
