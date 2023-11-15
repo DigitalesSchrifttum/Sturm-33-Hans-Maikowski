@@ -1,5 +1,7 @@
 #!/bin/bash
 
+outputDir="./output"
+
 convertHtmlToPdf() {
 	sourceName=$1
 	targetName=$2
@@ -22,7 +24,7 @@ convertHtmlToPdf() {
 
 mergeAllPDFs() {
 	echo "Merge all PDF pages."
-	param="$(echo ${@} book.pdf)"
+	param="$(echo ${@} ${outputDir}/book.pdf)"
 	pdfunite $param
 }
 
@@ -31,11 +33,15 @@ main() {
 	echo "This script will convert each html file to pdf by chromium with the following line for each html."
 	echo "'chromium --headless=new --disable-gpu --print-to-pdf=<name>.pdf ./<name>.html'"
 
+	if [ ! -d $outputDir ]; then
+		mkdir $outputDir
+	fi
+
 	allPDFsArr=()
 
 	for file in `find . -type f -regex '\.\/[0-9]*.html' | sort -n`; do
 		fnameHtml=$(basename "$file")
-		fnamePdf=${fnameHtml%.*}.pdf
+		fnamePdf=${outputDir}/${fnameHtml%.*}.pdf
 		allPDFsArr+="${fnamePdf} "
 		if [ -e $fnamePdf ]; then
 			echo "$fnamePdf existiert bereit und wird ignoriert."
