@@ -7,13 +7,19 @@
 		<title>Seite 19</title>
 		<style>
 			div.textarea {
-				margin: 3mm 2mm 5mm 8mm !important;
+				margin: 5mm 5mm 5mm 8mm !important;
 				display: flex;
 				flex-direction: column;
-				height: 100%;
 			}
 			.figure {
 				display: flex;
+			}
+			.a,
+			.c {
+				height: calc(100% / 7 * 2);
+			}
+			.b {
+				height: calc(100% / 7 * 3);
 			}
 			.figure.a > .text-container {
 				margin: 10mm 0 0 0;
@@ -24,32 +30,39 @@
 				display: flex;
 				flex-direction: column;
 				justify-content: space-between;
-				text-align: center;
+			}
+			img {
+				max-width: 100%;
+				max-height: 100%;
+				object-fit: cover;
 			}
 		</style>
 	</head>
 	<body>
 		<div class="textarea odd">
-			<div class="figure a flex-grow-2">
-				<span class="flex-grow-2 text-container"
+			<div class="figure a">
+				<span class="flex-grow-1 text-container"
 					>Sturm 33 in Bernau,<br />
 					11. März 1928</span
 				>
-				<img class="flex-grow-3" />
+				<img src="images/19a.jpg" />
 			</div>
-			<div class="figure b flex-grow-3">
-				<img class="flex-grow-6" />
-				<div class="flex-grow-1"></div>
-			</div>
-			<div class="figure c flex-grow-2">
-				<div class="flex-grow-2 text-container">
+			<div
+				class="figure b"
+				style="
+					background: url(./images/19b.jpg) no-repeat;
+					background-size: contain;
+				"
+			></div>
+			<div class="figure c">
+				<div class="flex-grow-1 text-container">
 					<span>Finkenkrug (3. 2. 1929)</span>
-					<span
+					<span style="text-align: center"
 						>Parteitag 1927<br />
 						Am Theresienplaß in Nürnberg</span
 					>
 				</div>
-				<img class="flex-grow-3" />
+				<img src="images/19c.jpg" />
 			</div>
 		</div>
 		<div class="page-link-area">
