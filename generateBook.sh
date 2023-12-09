@@ -1,12 +1,24 @@
 #!/bin/bash
 
+# check Chromuim exists
+if ! command -v chromium &> /dev/null; then
+	echo "Please install chromium!"
+	exit 1
+fi
+
+if [ -z "$1" ]; then
+	echo "Please add the path dir to your GERMAN chromium profile as parameter. It is used for hyphens!"
+	exit 1
+fi
+
+chromiumDataDir="$1"
 outputDir="./output"
 
 convertHtmlToPdf() {
 	sourceName=$1
 	targetName=$2
 	echo "Start converting of $sourceName."
-	params="--headless=new --print-to-pdf=${targetName} ./${sourceName}"
+	params="--headless=new  --user-data-dir=${chromiumDataDir} --print-to-pdf=${targetName} ./${sourceName}"
 	echo $params
 	chromium $params &
 	BACK_PID=$!
@@ -31,7 +43,7 @@ mergeAllPDFs() {
 main() {
 
 	echo "This script will convert each html file to pdf by chromium with the following line for each html."
-	echo "'chromium --headless=new --disable-gpu --print-to-pdf=<name>.pdf ./<name>.html'"
+	echo "'chromium --headless=new --user-data-dir=<chromium-data-dir> --print-to-pdf=<name>.pdf ./<name>.html'"
 
 	if [ ! -d $outputDir ]; then
 		mkdir $outputDir
