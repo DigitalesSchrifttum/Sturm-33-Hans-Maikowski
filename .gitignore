@@ -3,3 +3,15 @@ output/
 *.css
 *.map
 *.pdf
+
+# All unnecessary files of chromium
+
+buildScripts/chromium/AutofillStates/
+buildScripts/chromium/BrowserMetrics/
+buildScripts/chromium/Default/
+buildScripts/chromium/GraphiteDawnCache/
+buildScripts/chromium/GrShaderCache/
+buildScripts/chromium/LocalState/
+buildScripts/chromium/ShaderCache/
+buildScripts/chromium/Local\ State
+buildScripts/chromium/Variations

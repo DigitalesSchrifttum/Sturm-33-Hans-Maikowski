@@ -1,4 +1,7 @@
 {
+	"scripts": {
+		"build": "npx sass ./format.sass ./format.css && ./buildScripts/generateBook.sh ./buildScripts/chromium"
+	},
 	"devDependencies": {
 		"prettier": "2.8.3"
 	},
