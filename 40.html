@@ -4,10 +4,75 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="format.css" />
-		<title>Titel</title>
+		<title>Seite 40</title>
+		<style>
+			div.textarea {
+				margin: 0cm !important;
+				display: flex;
+				flex-direction: column;
+			}
+			img {
+				max-width: 100%;
+				max-height: 100%;
+				object-fit: cover;
+				margin-left: auto;
+				z-index: 1;
+			}
+			.picture-description {
+				text-align: center;
+			}
+			.figure {
+				display: flex;
+			}
+			.a {
+				height: 35%;
+			}
+			.a > .picture-description {
+				align-self: flex-end;
+			}
+
+			.b {
+				width: 89%;
+			}
+			img.c {
+				position: absolute;
+				width: 47mm;
+				left: 0;
+				bottom: 0;
+			}
+			.c + div {
+				display: flex;
+				flex-direction: column;
+				flex-grow: 1;
+				justify-content: space-around;
+				margin-left: 47mm;
+			}
+		</style>
 	</head>
 	<body>
-		<div class="textarea even"></div>
+		<div class="textarea odd">
+			<div class="figure a">
+				<img src="images/40a.jpg" />
+				<span class="picture-description flex-grow-1">
+					Sturmlokal<br />
+					Charlottenburg,<br />
+					Hebelstraße 20</span
+				>
+			</div>
+			<img class="b" src="images/40b.jpg" />
+			<img class="c" src="images/40c.jpg" />
+			<div>
+				<span class="picture-description">
+					Nürnberg, August 1929: Trupp Mitte des Sturms<br />
+					marschiert am Führer vorbei
+				</span>
+				<span><br /></span>
+				<span class="picture-description">
+					Hans Maikowski als Truppführer<br />
+					in Nauen, Frühjahr 1930
+				</span>
+			</div>
+		</div>
 		<div class="page-link-area">
 			<a href="./39.html">⇦</a><a href="./41.html">⇨</a>
 		</div>
