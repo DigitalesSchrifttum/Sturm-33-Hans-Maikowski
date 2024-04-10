@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 87 181"
+   version="1.1"
+   id="svg6"
+   sodipodi:docname="widmung.svg"
+   inkscape:version="1.3.2 (091e20ef0f, 2023-11-25, custom)"
+   width="87"
+   height="181"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs10" />
+  <sodipodi:namedview
+     id="namedview8"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="true"
+     showgrid="false"
+     inkscape:zoom="3.1882716"
+     inkscape:cx="62.102614"
+     inkscape:cy="129.38045"
+     inkscape:window-width="1916"
+     inkscape:window-height="1137"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg6"
+     inkscape:showpageshadow="2"
+     inkscape:deskcolor="#d1d1d1" />
+  <path
+     d="M 0,0 H 324 V 216 H 0 Z"
+     id="path2"
+     style="fill:none" />
+  <path
+     style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.689;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     d="M 78.826615,0.00545395 42.279545,5.9225789 0.11482455,113.93327 35.642164,108.97411 7.1789646,180.99455 44.687575,175.10277 86.885175,67.070341 51.357845,72.029501 78.826635,0.00548895 Z"
+     id="path2993"
+     inkscape:connector-curvature="0" />
+</svg>
