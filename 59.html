@@ -4,10 +4,62 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="format.css" />
-		<title>Titel</title>
+		<title>Seite 59</title>
+		<style>
+			img {
+				max-height: 100%;
+				max-width: 100%;
+				object-fit: cover;
+			}
+			div.textarea {
+				margin: 0cm !important;
+				display: flex;
+				flex-direction: column;
+			}
+			.picture-description {
+				text-align: center;
+			}
+			.figure {
+				display: flex;
+				flex: 1;
+			}
+			.a > img {
+				height: 105mm;
+			}
+			.a > .picture-description {
+				margin-top: 35mm;
+			}
+			.b > img {
+				position: absolute;
+				height: 148mm;
+				left: 3.3mm;
+				bottom: 0;
+			}
+			.b > .picture-description {
+				margin-top: auto;
+				margin-left: auto;
+				margin-bottom: 5mm;
+			}
+		</style>
 	</head>
 	<body>
-		<div class="textarea odd"></div>
+		<div class="textarea odd">
+			<div class="figure a">
+				<span class="picture-description flex-grow-1"
+					>Hans während seiner<br />Verfolgung in Berlin.<br />Im Januar
+					1932</span
+				>
+				<img src="images/59a.png" />
+			</div>
+			<div class="figure b">
+				<img src="images/59b.jpg" />
+				<span class="flex-grow-3"></span>
+				<span class="picture-description flex-grow-2"
+					>Hans Maikowski während seiner<br />Flucht in Schleßwig-Holstein<br />April
+					(1932)</span
+				>
+			</div>
+		</div>
 		<div class="page-link-area">
 			<a href="./58.html">⇦</a><a href="./60.html">⇨</a>
 		</div>
