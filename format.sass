@@ -135,6 +135,10 @@ hr
 .spacing
 	letter-spacing: 1mm
 
+.force-wrap
+	flex-basis: 100%
+	width: 0
+
 div.page-link-area
 	display: flex
 	justify-content: space-between
@@ -152,15 +156,17 @@ div.picture-placeholder
 	position: relative
 	width: 50%
 
-.force-wrap
-	flex-basis: 100%
-	width: 0
-
 div.margin
 	margin: math.div($pagemargin, 2)
 	visibility: hidden
 
-img
+// Sometimes it is easier to use a DIV with background property as an image element.
+div.image
+	background-size: contain
+	background-repeat: no-repeat
+	background-position: center
+
+img, div.image
 	background-color: lightgray
 
 @for $i from 1 through 6
@@ -192,8 +198,8 @@ div
 		background: none
 	div.page-link-area
 		display: none
-	img
-		background-color: white
+	img, div.image
+		background-color: none
 	@page
 		size: A5
 		margin: 0
