@@ -169,11 +169,6 @@ div.image
 img, div.image
 	background-color: lightgray
 
-@for $i from 1 through 6
-	.flex-grow-#{$i}
-		flex-grow: $i
-		flex-basis: 0
-
 div
 	&.poem
 		display: flex
@@ -223,3 +218,19 @@ body
 @font-face
 	font-family: Blankenburg
 	src: url(./fonts/Blankenburg.ttf)
+
+@for $i from 1 through 6
+	.flex-grow-#{$i}
+		flex-grow: $i
+		flex-basis: 0
+
+@each $e in flex, inline-flex, inline
+	.display-#{$e}
+		display: #{$e}
+
+@each $e in absolute, relative
+	.position-#{$e}
+		position: #{$e}
+
+.flex-direction-column
+	flex-direction: column
