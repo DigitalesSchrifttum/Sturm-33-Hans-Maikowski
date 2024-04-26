@@ -16,15 +16,16 @@
 				text-align-last: justify;
 				margin: 0 auto;
 			}
-			.a {
-				width: 100%;
-			}
 			.a .picture-description {
 				align-self: center;
 			}
 			.a > img {
 				margin-top: 1.9mm;
 				height: 96mm;
+			}
+			.b {
+				width: 100%;
+				bottom: 0;
 			}
 			.b > img {
 				z-index: 1;
@@ -40,7 +41,7 @@
 	</head>
 	<body class="landscape">
 		<div class="textarea odd">
-			<div class="a display-flex position-absolute">
+			<div class="a display-flex">
 				<img src="./images/61a.jpg" />
 				<div class="display-flex flex-grow-1">
 					<span class="picture-description">
@@ -49,8 +50,7 @@
 					</span>
 				</div>
 			</div>
-			<div class="flex-grow-1"></div>
-			<div class="b display-flex">
+			<div class="b display-flex position-absolute">
 				<div class="display-flex flex-direction-column flex-grow-1">
 					<span class="flex-grow-1"></span>
 					<span class="picture-description"

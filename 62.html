@@ -1,13 +1,76 @@
+<!--
+	TODO: Das Bild 62a existiert noch in der 5. Auflage, wurde aber
+	spätestens in der 9. Auflage entfernt. Es gilt herauszufinden,
+	ab welcher Auflage das Bild entfernt wurde, um die Anmerkung zu
+	hinterlegen!
+-->
 <!DOCTYPE html>
 <html lang="de">
 	<head>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="format.css" />
-		<title>Titel</title>
+		<title>Seite 62</title>
+		<style>
+			div.textarea {
+				margin: 0cm !important;
+				display: flex;
+				flex-direction: column;
+			}
+			.picture-description {
+				text-align: center;
+			}
+			.a {
+				width: 100%;
+			}
+			.a .picture-description {
+				margin: 0 auto;
+			}
+			.a > img {
+				margin-top: 3.4mm;
+				height: 91.4mm;
+			}
+			.b {
+				width: 100%;
+				bottom: 0;
+			}
+			.b .picture-description {
+				justify-self: flex-start;
+				margin: 0 0 3mm 6mm;
+			}
+			.b > img {
+				z-index: 1;
+				height: 77mm;
+			}
+
+			@media print {
+				@page {
+					size: A5 landscape;
+				}
+			}
+		</style>
 	</head>
-	<body>
-		<div class="textarea even"></div>
+	<body class="landscape">
+		<div class="textarea even">
+			<div class="a display-flex position-absolute">
+				<div class="display-flex flex-direction-column flex-grow-1">
+					<span class="flex-grow-3"></span>
+					<span class="picture-description flex-grow-2">
+						Der Führer und Hauptmann Göring<br />vor dem Dom
+					</span>
+				</div>
+				<img src="./images/62a.jpg" />
+			</div>
+			<div class="b display-flex position-absolute">
+				<img src="images/62b.jpg" class="" />
+				<div class="display-flex flex-direction-column">
+					<span class="flex-grow-1"></span>
+					<span class="picture-description"
+						>Sturm 33 vor dem Dom angetreten</span
+					>
+				</div>
+			</div>
+		</div>
 		<div class="page-link-area">
 			<a href="./61.html">⇦</a><a href="./63.html">⇨</a>
 		</div>
