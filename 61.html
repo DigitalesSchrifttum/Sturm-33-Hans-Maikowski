@@ -4,10 +4,69 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="format.css" />
-		<title>Titel</title>
+		<title>Seite 61</title>
+		<style>
+			div.textarea {
+				margin: 0cm !important;
+				display: flex;
+				flex-direction: column;
+			}
+			.picture-description {
+				text-align: justify;
+				text-align-last: justify;
+				margin: 0 auto;
+			}
+			.a {
+				width: 100%;
+			}
+			.a .picture-description {
+				align-self: center;
+			}
+			.a > img {
+				margin-top: 1.9mm;
+				height: 96mm;
+			}
+			.b > img {
+				z-index: 1;
+				height: 85mm;
+			}
+
+			@media print {
+				@page {
+					size: A5 landscape;
+				}
+			}
+		</style>
 	</head>
-	<body>
-		<div class="textarea odd"></div>
+	<body class="landscape">
+		<div class="textarea odd">
+			<div class="a display-flex position-absolute">
+				<img src="./images/61a.jpg" />
+				<div class="display-flex flex-grow-1">
+					<span class="picture-description">
+						SA. marschiert durch die Wallstraße<br />
+						an der Mordstelle vorbei (2. Februar 1933)
+					</span>
+				</div>
+			</div>
+			<div class="flex-grow-1"></div>
+			<div class="b display-flex">
+				<div class="display-flex flex-direction-column flex-grow-1">
+					<span class="flex-grow-1"></span>
+					<span class="picture-description"
+						>Die Amnestierten (Weihnachten 1932)</span
+					>
+					<span style="text-align: center">Obere Reihe von links:</span>
+					<span class="picture-description">
+						Foyer, Markowski, Maikowski, Hahn,<br />F. Domming, Wittke, K.
+						Domming.<br />Untere Reihe: Pieper, ein Ostpreuße,<br />Stief,
+						Froschauer, Friede, Liebscher</span
+					>
+					<span><br /></span>
+				</div>
+				<img src="images/61b.jpg" class="" />
+			</div>
+		</div>
 		<div class="page-link-area">
 			<a href="./60.html">⇦</a><a href="./62.html">⇨</a>
 		</div>
