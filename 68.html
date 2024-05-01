@@ -5,11 +5,28 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="format.css" />
 		<title>Seite 68</title>
+		<!--
+			Manuelle Anpassung, weil diese Seite ein Sonderfall mit 41 statt
+			42 Zeilen darstellt. Die Zeilen müssen folglich in ihrer Höhe
+			gestreckt werden, um auf die selbe Höhe zu kommen.
+			Standardfall: 42 Zeilen; 4,05mm Höhe / Zeile; 170,1mm insgesamt
+			Sonderfall:   41 Zeilen; 4,10mm Höhe / Zeile; 168,1mm insgesamt
+			              Vier Absätze erhalten je 0,5mm Abstand nach unten,
+							  um auf die Gesamthöhe von 170,1mm zu kommen. 
+		-->
+		<style>
+			body {
+				line-height: 4.1mm;
+			}
+			p.margin-adjustment {
+				margin-bottom: 0.5mm;
+			}
+		</style>
 	</head>
 	<body>
 		<div class="textarea even">
-			<p>Berlin NW 40, den 12. November 1932.</p>
-			<p>
+			<p class="end margin-adjustment">Berlin NW 40, den 12. November 1932.</p>
+			<p class="ws-1000µm margin-adjustment">
 				Lieber Bubi! … Deine Briefe habe ich erhalten. Ich bin nun gerade 14
 				Tage hier. Ich überlege zur Zeit noch, in welches Irrenhaus ich mich von
 				hier aus bringen lassen werde, denn allmählich wird man hier verrückt.
@@ -25,7 +42,7 @@
 				sieht die Tür, sieht die vier Wände an, dann ist es aus, und man rennt
 				wieder stundenlang auf und ab.
 			</p>
-			<p>
+			<p class="ws-900µm margin-adjustment">
 				Doch nun zu Wichtigerem. Ich halte es für zweckmäßig, alle 14 Tage einen
 				Sturmabend und wöchentlich Truppabende abzuhalten. Beim Sturmabend erst
 				in der Kegelbahn antreten lassen, und dann anschließend oben einen
@@ -39,14 +56,14 @@
 				gut vor (Ankündigung im „Angriff“, Redner usw.). Wenn Ihr sonst noch
 				Sorgen habt, schreibt mir die.
 			</p>
-			<p>
+			<p class="margin-adjustment">
 				Nun zu den Besuchen. Ich wollte Dir erst schreiben, Du möchtest für
 				meine Mutter (mein Vater arbeitet und hat doch keine Zeit) einen
 				Sprechschein besorgen. Laß das aber lieber. Meine Mutter hat sich nun
 				gerade getröstet, sie würde merken, daß es mir nicht so gut geht, wie
 				ich ihr schreibe, und würde sich nur unnötig aufregen …
 			</p>
-			<p class="justify-last">
+			<p class="justify-last ws-800µm">
 				Das Wahlresultat habe ich inzwischen auch endlich erfahren. Hätte nie
 				gedacht, daß wir so gut abschneiden würden. Endlich sind wir das
 				Spießervolk los und wissen, womit wir rechnen können. Es kommt nicht auf
