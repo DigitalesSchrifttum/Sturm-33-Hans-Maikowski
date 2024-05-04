@@ -15,3 +15,7 @@ buildScripts/chromium/LocalState/
 buildScripts/chromium/ShaderCache/
 buildScripts/chromium/Local\ State
 buildScripts/chromium/Variations
+buildScripts/chromium/Safe\ Browsing
+buildScripts/chromium/segmentation_platform
+buildScripts/chromium/WidevineCdm
+buildScripts/chromium/Last\ Version
