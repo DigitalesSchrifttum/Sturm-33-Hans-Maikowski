@@ -5,10 +5,65 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="format.css" />
 		<title>Seite 79</title>
+		<style>
+			:root {
+				--adjustment: 0.5mm;
+			}
+
+			div.textarea {
+				margin: 0cm !important;
+				display: flex;
+				flex-direction: column;
+			}
+			.figure {
+				display: flex;
+			}
+			.a {
+				height: 135mm;
+				margin-top: var(--adjustment);
+				margin-right: var(--adjustment);
+			}
+			.b {
+				position: absolute;
+				right: 20.5mm;
+				bottom: var(--adjustment);
+				left: var(--adjustment);
+			}
+			.figure.a > div {
+				margin: 0 8mm;
+				display: flex;
+				flex-direction: column;
+				flex-grow: 1;
+				justify-content: space-between;
+				margin-bottom: 25mm;
+				text-align: justify;
+				text-align-last: center;
+			}
+			img {
+				max-width: 100%;
+				max-height: 100%;
+				object-fit: cover;
+			}
+		</style>
 	</head>
-	<!-- Angabe zur Druckerei -->
 	<body>
-		<div class="textarea odd"></div>
+		<div class="textarea odd">
+			<div class="figure a">
+				<div>
+					<span class="picture-description"
+						>Zehntausende grüßen im Luftgarten den Trauerzug
+					</span>
+					<span class="picture-description">
+						Der Leichenwagen Hans Maikowskis begleitet von<br />SA.-Männern des
+						Sturm 33
+					</span>
+				</div>
+				<img src="images/79a.jpg" />
+			</div>
+			<div class="figure b">
+				<img src="images/79b.jpg" />
+			</div>
+		</div>
 		<div class="page-link-area">
 			<a href="./78.html">⇦</a><a href="./80.html">⇨</a>
 		</div>
