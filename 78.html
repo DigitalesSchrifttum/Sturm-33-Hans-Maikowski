@@ -4,10 +4,65 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="format.css" />
-		<title>Titel</title>
+		<title>Seite 78</title>
+		<style>
+			div.textarea {
+				margin: 0cm !important;
+				display: flex;
+				flex-direction: column;
+			}
+			.picture-description {
+				text-align: justify;
+				text-align-last: justify;
+				margin: 0 auto;
+			}
+			.a .picture-description {
+				align-self: center;
+			}
+			.a > img {
+				margin-top: 0.8mm;
+				margin-left: 2.7mm;
+				height: 96mm;
+			}
+			.b {
+				width: 100%;
+				bottom: 0;
+			}
+			.b > img {
+				z-index: 1;
+				height: 83mm;
+				margin-right: 2.7mm;
+				margin-bottom: 1mm;
+			}
+
+			@media print {
+				@page {
+					size: A5 landscape;
+				}
+			}
+		</style>
 	</head>
-	<body>
-		<div class="textarea even"></div>
+	<body class="landscape">
+		<div class="textarea even">
+			<div class="a display-flex">
+				<img src="./images/78a.jpg" />
+				<div class="display-flex flex-grow-1">
+					<span class="picture-description">Die Trauerfeier im Dom</span>
+				</div>
+			</div>
+			<div class="b display-flex position-absolute">
+				<div class="display-flex flex-direction-column flex-grow-1">
+					<span class="flex-grow-1"></span>
+					<span class="picture-description"
+						>Ehrenwache der SA. und der Schupo<br />
+						an den Särgen der Gefallenen<br />
+						während der Trauerfeier im Dom</span
+					>
+					<span><br /><br /></span>
+				</div>
+				<img src="images/78b.jpg" class="" />
+			</div>
+		</div>
 		<div class="page-link-area">
 			<a href="./77.html">⇦</a><a href="./79.html">⇨</a>
 		</div>
