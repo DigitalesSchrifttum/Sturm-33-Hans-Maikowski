@@ -1,6 +1,7 @@
 @use "sass:math"
-$pagewidth: 148mm
-$pageheight: 210mm
+$beschnitt: 3mm
+$pagewidth: 148mm // + 2 * $beschnitt
+$pageheight: 210mm // + 2 * $beschnitt
 $font: "Times New Roman", Times, serif
 $font-size: 3.8mm
 $line-height: 4.05mm
@@ -19,6 +20,7 @@ body
 	height: $pageheight
 
 	margin: 0
+	padding: $beschnitt
 
 	display: flex
 	flex-direction: column
@@ -92,7 +94,7 @@ h6
 
 .fill
 	position: absolute!important
-	margin: 0!important
+	margin: $beschnitt!important
 	top: 0
 	bottom: 0
 	left: 0
@@ -151,6 +153,7 @@ div.page-link-area
 
 	position: absolute
 	bottom: 0
+	left: 0
 	z-index: 1
 
 	font-size: 3em
@@ -196,7 +199,7 @@ div
 	div.page-link-area
 		display: none
 	@page
-		size: A5
+		size: $pagewidth + 2 * $beschnitt $pageheight + 2 * $beschnitt
 		margin: 0
 
 // watermark

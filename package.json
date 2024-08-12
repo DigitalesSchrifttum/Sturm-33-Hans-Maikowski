@@ -1,6 +1,7 @@
 {
 	"scripts": {
-		"build": "npx sass ./format.sass ./format.css && ./buildScripts/generateBook.sh ./buildScripts/chromium"
+		"build": "npx sass ./format.sass ./format.css && ./buildScripts/generateBook.sh ./output ./buildScripts/chromium",
+		"buildForPrint": "npx sass ./format.sass ./format.css && ./buildScripts/generateBook.sh ./outputPrint ./buildScripts/chromium print"
 	},
 	"devDependencies": {
 		"prettier": "2.8.3"
