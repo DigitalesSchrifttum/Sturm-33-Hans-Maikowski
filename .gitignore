@@ -3,6 +3,12 @@ output/
 *.css
 *.map
 *.pdf
+*.csv
+*.ods
+
+# private files
+
+private/
 
 # All unnecessary files of chromium
 
@@ -19,3 +25,4 @@ buildScripts/chromium/Safe\ Browsing
 buildScripts/chromium/segmentation_platform
 buildScripts/chromium/WidevineCdm
 buildScripts/chromium/Last\ Version
+buildScripts/chromium/first_party_sets.db
